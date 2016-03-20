@@ -1,0 +1,99 @@
+﻿Build started 3/20/2016 6:11:44 PM.
+     1>Project "C:\Users\shixi_000\Documents\Visual Studio 2013\Projects\CardPrototype32bit\CardPrototype32bit\CardPrototype32bit.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"F:\SFML 32\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt activeCard.cpp boardCard.cpp card.cpp cardStruct.cpp handCard.cpp main.cpp
+         main.cpp
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(11): error C2061: syntax error : identifier 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(11): error C2504: 'CObject' : base class undefined
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(23): error C2061: syntax error : identifier 'CArchive'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(27): error C2061: syntax error : identifier 'CardHand'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(10): error C2061: syntax error : identifier 'CardHand'
+         handCard.cpp
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(11): error C2061: syntax error : identifier 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(11): error C2504: 'CObject' : base class undefined
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(23): error C2061: syntax error : identifier 'CArchive'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(27): error C2061: syntax error : identifier 'CardHand'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(10): error C2061: syntax error : identifier 'CardHand'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(16): error C2664: 'CardHand::listNode::listNode(const CardHand::listNode &)' : cannot convert argument 1 from 'Card *' to 'ActiveCard *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(23): error C2664: 'CardHand::listNode::listNode(const CardHand::listNode &)' : cannot convert argument 1 from 'Card *' to 'ActiveCard *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(33): error C2446: '==' : no conversion from 'Card *' to 'ActiveCard *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(33): error C2440: '==' : cannot convert from 'Card *' to 'ActiveCard *'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(60): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(61): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(62): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(64): error C2039: 'display' : is not a member of 'ActiveCard'
+                 c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(5) : see declaration of 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(71): error C2511: 'CardHand::listNode::listNode(Card *)' : overloaded member function not found in 'CardHand::listNode'
+                 c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(10) : see declaration of 'CardHand::listNode'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.cpp(72): error C2597: illegal reference to non-static member 'CardHand::listNode::elem'
+         card.cpp
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(11): error C2061: syntax error : identifier 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\cardstruct.h(10): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\cardstruct.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(8): error C2653: 'Card' : is not a class or namespace name
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(8): error C2061: syntax error : identifier 'Type'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(10): error C2061: syntax error : identifier 'CardHand'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(12): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(22): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(23): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(11): error C2504: 'CObject' : base class undefined
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(23): error C2061: syntax error : identifier 'CArchive'
+         boardCard.cpp
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\cardstruct.h(10): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\cardstruct.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(8): error C2653: 'Card' : is not a class or namespace name
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(8): error C2061: syntax error : identifier 'Type'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(10): error C2061: syntax error : identifier 'CardHand'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(12): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(22): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(23): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(11): error C2504: 'CObject' : base class undefined
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(23): error C2061: syntax error : identifier 'CArchive'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(27): error C2061: syntax error : identifier 'BoardCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.cpp(8): error C2084: function 'BoardCard::BoardCard(void)' already has a body
+                 c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(17) : see previous definition of '{ctor}'
+         activeCard.cpp
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(11): error C2061: syntax error : identifier 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\cardstruct.h(10): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\cardstruct.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(11): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(14): error C2061: syntax error : identifier 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(22): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(23): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(11): error C2504: 'CObject' : base class undefined
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(23): error C2061: syntax error : identifier 'CArchive'
+         Generating Code...
+         Compiling...
+         cardStruct.cpp
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\boardcard.h(11): error C2061: syntax error : identifier 'ActiveCard'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(8): error C2653: 'Card' : is not a class or namespace name
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(8): error C2061: syntax error : identifier 'Type'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(10): error C2061: syntax error : identifier 'CardHand'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(12): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\activecard.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(22): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\handcard.h(23): error C2061: syntax error : identifier 'Card'
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(11): error C2504: 'CObject' : base class undefined
+     1>c:\users\shixi_000\documents\visual studio 2013\projects\cardprototype32bit\cardprototype32bit\card.h(23): error C2061: syntax error : identifier 'CArchive'
+         Generating Code...
+     1>Done Building Project "C:\Users\shixi_000\Documents\Visual Studio 2013\Projects\CardPrototype32bit\CardPrototype32bit\CardPrototype32bit.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.53
