@@ -1,6 +1,6 @@
 #ifndef BOARDCARD_H
 #define BOARDCARD_H
-#include "card.h"
+#include "activeCard.h"
 class BoardCard{
 private:
 	
@@ -28,7 +28,5 @@ private:
 
 
 };
-
-
 
 #endif

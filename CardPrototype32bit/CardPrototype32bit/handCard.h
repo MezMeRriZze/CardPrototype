@@ -1,6 +1,5 @@
 #ifndef CARDHAND_H
 #define CARDHAND_H
-#include "cardStruct.h"
 #include "activeCard.h"
 using namespace sf;
 using namespace std;
@@ -19,8 +18,8 @@ public:
 
 	CardHand();
 	~CardHand();
-	void insertCard( Card * theCard);
-	void useCard( Card * theCard , bool & useSucc);
+	void insertCard( ActiveCard * theCard);
+	void useCard( ActiveCard * theCard , CardHand & other , BoardCard & theBoard ,  bool & useSucc);
 	void showCards(RenderWindow & target, bool whoseCard ,bool update);
 	//void examineCard( Card * theCard);
 

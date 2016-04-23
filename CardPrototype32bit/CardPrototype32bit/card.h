@@ -4,11 +4,11 @@
 #include <SFML/Window/Mouse.hpp>
 #include <string.h>
 #include <iostream>
-#include "boardCard.h"
-#include "handCard.h"
 using namespace sf;
 using namespace std;
-class Card : public CObject{
+class CardHand;
+class BoardCard;
+class Card{
 	//DECLARE_SERIAL(Card)
 public :
 	enum Type
@@ -20,11 +20,14 @@ public :
 		First
 	};
 	Card();
-	void Serialize(CArchive & archive);
 	Card(const Vector2f & att, const string & con, const string & path, Type tp, Package pack, int cardNum, bool & flag);
 	virtual	~Card();
 	void display(RenderWindow & window, bool update, Vector2f & pos);
-	virtual void deployEffect(RenderWindow & target, CardHand & hand, CardHand & oppoHand, BoardCard & board) = 0;
+	virtual void deployEffect(CardHand & hand, CardHand & oppoHand, BoardCard & board) = 0;
+	virtual int getCost() = 0;
+	virtual int getLifePoint() = 0;
+	virtual int getDefense() = 0;
+	virtual int getAttack() = 0;
 
 private:
 	Type type;

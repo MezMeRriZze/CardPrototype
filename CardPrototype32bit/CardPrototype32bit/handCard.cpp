@@ -8,10 +8,12 @@ CardHand::CardHand(){
 }
 
 CardHand::~CardHand(){
+	//head = tail = NULL;
+	//numOfCards = 0;
 	_clear();
 }
 
-void CardHand::insertCard( Card * theCard){
+void CardHand::insertCard( ActiveCard * theCard){
 	if (head == NULL){
 		head = new listNode(theCard);
 		head->prev = NULL;
@@ -27,11 +29,11 @@ void CardHand::insertCard( Card * theCard){
 	numOfCards++;
 }
 
-void CardHand::useCard(Card * theCard , bool & useSucc){
+void CardHand::useCard(ActiveCard * theCard , CardHand & other , BoardCard & theBoard ,  bool & useSucc){
 	listNode * temp = head;
 	while (temp != NULL){
 		if (temp->elem == theCard){
-			//temp->useThisCard();
+			temp->elem->useCard( *this,  other ,  theBoard);
 			if (temp->prev != NULL){
 				temp->prev->next = temp->next;
 			}
@@ -68,8 +70,9 @@ void CardHand::showCards(RenderWindow & target, bool whoseCard,  bool update){
 }
 
 
-CardHand::listNode::listNode( Card * theCard){
+CardHand::listNode::listNode( ActiveCard * theCard){
 	elem = theCard;
+	prev = next = NULL;
 }
 
 CardHand::listNode::~listNode(){
@@ -80,7 +83,7 @@ void CardHand::_clear(){
 	listNode * temp = head;
 	while (temp != NULL){
 		listNode * next = temp->next;
-		temp = NULL;
+		delete temp;
 		temp = next;
 	}
 	tail = head = NULL;

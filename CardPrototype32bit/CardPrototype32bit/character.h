@@ -14,6 +14,7 @@ public :
 	void display(RenderWindow & window , bool update);
 
 private:
+
 	Sprite * chara;
 	string name , description;
 	Vector2f position, attribute;

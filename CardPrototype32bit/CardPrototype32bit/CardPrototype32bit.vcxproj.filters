@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Cards">
+      <UniqueIdentifier>{93f34d5f-b36b-48f0-b6c2-733374c7ac78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="card.cpp">
@@ -36,6 +39,15 @@
     <ClCompile Include="activeCard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="creature.cpp">
+      <Filter>Source Files\Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="spell.cpp">
+      <Filter>Source Files\Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="bank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.h">
@@ -54,6 +66,15 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="activeCard.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="creature.h">
+      <Filter>Source Files\Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="spell.h">
+      <Filter>Source Files\Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="bank.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

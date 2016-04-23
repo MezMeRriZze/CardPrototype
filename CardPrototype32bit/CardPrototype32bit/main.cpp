@@ -1,14 +1,18 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Mouse.hpp>
 #include <iostream>
+#include "activeCard.h"
+#include "cardStruct.h"
 #include "character.h"
-#include "handCard.h"
 using namespace sf;
 using namespace std;
-
+void constructCards(CardStruct & target){
+	
+}
 int main()
 {
-	
+	CardStruct * allCards = NULL;
+	//constructCards(*allCards);
 	RenderWindow window(VideoMode(1920, 1080), "Card_Game");
 	Vector2f charaSize(350, 400);
 	Vector2f cardSize(250, 350);
@@ -26,9 +30,9 @@ int main()
 	//Card * sprint5 = new Card(cardSize, "kills yourself", pathOfChara1, loadSucc);
 	//Card * sprint6 = new Card(cardSize, "kills yourself", pathOfChara1, loadSucc);
 	//Card * sprint7 = new Card(cardSize, "kills yourself", pathOfChara1, loadSucc);
-	if (!loadSucc) return 1;
-	CardHand * myHand = new CardHand(); 
-	CardHand * yourHand = new CardHand();
+	//if (!loadSucc) return 1;
+	//CardHand * myHand = new CardHand(); 
+	//CardHand * yourHand = new CardHand();
 	//myHand->insertCard(sprint);
 	//myHand->insertCard(sprint1);
 	//myHand->insertCard(sprint2);
@@ -39,6 +43,7 @@ int main()
 	//yourHand->insertCard(sprint7);
 
 	while (window.isOpen()){
+		if (!loadSucc) return 1;
 		Event event;
 		while (window.pollEvent(event)){
 			if (event.type == Event::Closed)
@@ -46,8 +51,8 @@ int main()
 		}
 
 		window.clear();
-		myHand->showCards(window, true, false);
-		yourHand->showCards(window, false, false);
+		//myHand->showCards(window, true, false);
+		//yourHand->showCards(window, false, false);
 		chara1->display(window , false);
 		chara2->display(window, false);
 		window.display();

@@ -20,20 +20,26 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="activeCard.cpp" />
+    <ClCompile Include="bank.cpp" />
     <ClCompile Include="boardCard.cpp" />
     <ClCompile Include="card.cpp" />
     <ClCompile Include="cardStruct.cpp" />
     <ClCompile Include="character.cpp" />
     <ClCompile Include="handCard.cpp" />
+    <ClCompile Include="creature.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="spell.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="activeCard.h" />
+    <ClInclude Include="bank.h" />
     <ClInclude Include="boardCard.h" />
     <ClInclude Include="card.h" />
     <ClInclude Include="cardStruct.h" />
     <ClInclude Include="character.h" />
     <ClInclude Include="handCard.h" />
+    <ClInclude Include="creature.h" />
+    <ClInclude Include="spell.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="chara1.jpg" />

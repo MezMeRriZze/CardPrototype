@@ -5,9 +5,6 @@ BoardCard::BoardCard(){
 	headForPOne = headForPTwo = NULL;
 }
 
-BoardCard::BoardCard(){
-
-}
 
 void BoardCard::_clear(){
 
